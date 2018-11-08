@@ -1,0 +1,511 @@
+=====xcode buid succeded
+
+[Xcode] CodeSign /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app (in target: WebDriverAgentRunner)
+[Xcode]     cd /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent
+[Xcode]     export CODESIGN_ALLOCATE=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/codesign_allocate
+[Xcode]     
+[Xcode] Signing Identity:     "iPhone Developer: apopichenko@icloud.com (8CT2DGU64V)"
+[Xcode] Provisioning Profile: "iOS Team Provisioning Profile: com.ipswitch.WebDriverAgentRunner"
+[Xcode]                       (cf60fa5c-33a9-462e-bd99-e4574e5431f6)
+[Xcode] 
+[Xcode]     /usr/bin/codesign --force --sign 68C02E354F17790F75092E5DBC8287D1F737CAD2 --entitlements /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Intermediates.noindex/WebDriverAgent.build/Debug-iphoneos/WebDriverAgentRunner.build/WebDriverAgentRunner.xctest.xcent --timestamp=none /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app
+[Xcode] 
+[Xcode] /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app: replacing existing signature
+[Xcode] 
+[Xcode] 
+[Xcode] 
+[Xcode] ** TEST BUILD SUCCEEDED **
+[Xcode] 
+[Xcode] 
+
+
+
+
+=====But when test application started it closed with error
+
+
+
+Xcode] 2018-11-08 18:01:41.435435+0200 WebDriverAgentRunner-Runner[278:5985] Built at Nov  8 2018 07:50:52
+[Xcode] 
+[Xcode] 2018-11-08 18:01:41.468790+0200 WebDriverAgentRunner-Runner[278:5985] ServerURLHere->http://10.34.41.127:8100<-ServerURLHere
+[Xcode] 2018-11-08 18:01:41.469182+0200 WebDriverAgentRunner-Runner[278:5985] Using singleton test manager
+[Xcode] 
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [XCUITest] WebDriverAgent information:
+[debug] [XCUITest] ""
+[debug] [XCUITest] WebDriverAgent successfully started after 37814ms
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692901781 (08:01:41 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692902816 (08:01:42 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692903886 (08:01:43 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =     2.52s Open com.ipswitch.internal.whatsupgold
+[Xcode]     t =     2.53s     Launch com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =     2.66s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[Xcode]     t =     4.44s Find the Application 'com.ipswitch.internal.whatsupgold'
+[Xcode] 
+[Xcode]     t =     4.44s     Snapshot accessibility hierarchy for app with pid 281
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692907049 (08:01:47 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692908161 (08:01:48 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =     6.69s Open com.ipswitch.internal.whatsupgold
+[Xcode]     t =     6.70s     Launch com.ipswitch.internal.whatsupgold
+[Xcode]     t =     6.70s         Terminate com.ipswitch.internal.whatsupgold:281
+[Xcode] 
+[Xcode]     t =     8.03s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[Xcode]     t =     9.17s Find the Application 'com.ipswitch.internal.whatsupgold'
+[Xcode]     t =     9.17s     Snapshot accessibility hierarchy for app with pid 282
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692911771 (08:01:51 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692912867 (08:01:52 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =    11.49s Open com.ipswitch.internal.whatsupgold
+[Xcode]     t =    11.49s     Launch com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =    11.49s         Terminate com.ipswitch.internal.whatsupgold:282
+[Xcode] 
+[Xcode]     t =    12.67s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[Xcode]     t =    14.22s Find the Application 'com.apple.springboard'
+[Xcode]     t =    14.22s     Snapshot accessibility hierarchy for app with pid 52
+[Xcode] 
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692916890 (08:01:56 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692917970 (08:01:57 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692919008 (08:01:59 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692920080 (08:02:00 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692921218 (08:02:01 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =    19.75s Open com.ipswitch.internal.whatsupgold
+[Xcode]     t =    19.75s     Launch com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =    19.76s         Terminate com.ipswitch.internal.whatsupgold:283
+[Xcode] 
+[Xcode]     t =    20.96s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[Xcode]     t =    22.20s Find the Application 'com.ipswitch.internal.whatsupgold'
+[Xcode] 
+[Xcode]     t =    22.20s     Snapshot accessibility hierarchy for app with pid 284
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692924791 (08:02:04 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =    23.35s Open com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =    23.35s     Launch com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =    23.35s         Terminate com.ipswitch.internal.whatsupgold:284
+[Xcode] 
+[Xcode]     t =    24.60s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[Xcode]     t =    25.84s Find the Application 'com.ipswitch.internal.whatsupgold'
+[Xcode]     t =    25.85s     Snapshot accessibility hierarchy for app with pid 285
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692928455 (08:02:08 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: ""
+[debug] [JSONWP Proxy] Matched '/session' to command name 'createSession'
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"com.ipswitch.internal.whatsupgold","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[Xcode]     t =    27.05s Open com.ipswitch.internal.whatsupgold
+[Xcode]     t =    27.05s     Launch com.ipswitch.internal.whatsupgold
+[Xcode] 
+[Xcode]     t =    27.05s         Terminate com.ipswitch.internal.whatsupgold:285
+[Xcode] 
+[Xcode]     t =    28.31s         Wait for com.ipswitch.internal.whatsupgold to idle
+[Xcode] 
+[Xcode]     t =    29.47s Find the Application 'com.ipswitch.internal.whatsupgold'
+[Xcode]     t =    29.47s     Snapshot accessibility hierarchy for app with pid 286
+[Xcode] 
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1541692932085 (08:02:12 GMT-0800 (PST))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+[debug] [XCUITest] Failed to create WDA session (An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up). Retrying...
+[debug] [XCUITest] Unable to start WebDriverAgent session because of xcodebuild failure: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+[XCUITest] Quitting and uninstalling WebDriverAgent, then retrying
+[XCUITest] Shutting down sub-processes
+[XCUITest] Shutting down iproxy process (pid 23943)
+[debug] [XCUITest] iproxy exited with code 'null'
+[XCUITest] Shutting down xcodebuild process (pid 23944)
+[Xcode] ** BUILD INTERRUPTED **
+[Xcode] 
+[XCUITest] xcodebuild exited with code 'null' and signal 'SIGTERM'
+[Xcode] Contents of xcodebuild log file '/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Test-WebDriverAgentRunner-2018.11.08_08-01-09--0800.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-4DC785D6-31B1-41EB-B771-014DA9E5CCBB/WebDriverAgentRunner-8D1D24EF-5DD8-49B6-B8F8-01CF7F6130F2/Session-WebDriverAgentRunner-2018-11-08_080111-QJtZpm.log':
+[Xcode] 08:01:11.353 xcodebuild[23944:344373] Beginning test session WebDriverAgentRunner-41BD3F31-4D84-4546-8C8A-3BA40AF5102C at 2018-11-08 08:01:11.349 with Xcode 10B61 on target 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> {
+[Xcode] 		deviceSerialNumber:         FK2WJAXRHFLR
+[Xcode] 		identifier:                 myUDID
+[Xcode] 		deviceClass:                iPhone
+[Xcode] 		deviceName:                 iPhone (Artur)
+[Xcode] 		deviceIdentifier:           myUDID
+[Xcode] 		productVersion:             12.1
+[Xcode] 		buildVersion:               16B92
+[Xcode] 		deviceSoftwareVersion:      12.1 (16B92)
+[Xcode] 		deviceArchitecture:         arm64
+[Xcode] 		deviceTotalCapacity:        27938107392
+[Xcode] 		deviceAvailableCapacity:    17253769216
+[Xcode] 		deviceIsTransient:          NO
+[Xcode] 		ignored:                    NO
+[Xcode] 		deviceIsBusy:               NO
+[Xcode] 		deviceIsPaired:             YES
+[Xcode] 		deviceIsActivated:          YES
+[Xcode] 		deviceActivationState:      Activated
+[Xcode] 		isPasscodeLocked:           NO
+[Xcode] 		deviceType:                 <DVTDeviceType:0x7feb09c38bb0 Xcode.DeviceType.iPhone>
+[Xcode] 		supportedDeviceFamilies:    (
+[Xcode]     1
+[Xcode] )
+[Xcode] 		applications:              (null)
+[Xcode] 		provisioningProfiles:      (null)
+[Xcode] 		hasInternalSupport:        NO
+[Xcode] 		isSupportedOS:             YES
+[Xcode] 		developerDiskMountError:   (null)
+[Xcode] (null)
+[Xcode] 	bootArgs:                  (null)
+[Xcode] 		connected:                 yes
+[Xcode] 		isWirelessEnabled:         yes
+[Xcode] 		connectionType:            network
+[Xcode] 		hostname:                  iPhone-Artur.local.
+[Xcode] 		bonjourServiceName:        c0:b6:58:97:c4:a1@fe80::c2b6:58ff:fe97:c4a1._apple-mobdev2._tcp.local.
+[Xcode] 		} (12.1 (16B92))
+[Xcode] 08:01:11.353 xcodebuild[23944:344373] 	/Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild
+[Xcode] build-for-testing
+[Xcode] test-without-building
+[Xcode] -project
+[Xcode] /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj
+[Xcode] -scheme
+[Xcode] WebDriverAgentRunner
+[Xcode] -destination
+[Xcode] id=myUDID
+[Xcode] IPHONEOS_DEPLOYMENT_TARGET=12.1
+[Xcode] -xcconfig
+[Xcode] /var/folders/p4/vtd992j57sxbv_d89w2cblc80000gn/T/2018108-23863-yf6230.lnr3/appium-temp.xcconfig
+[Xcode] 08:01:11.354 xcodebuild[23944:344373] Launching with Xcode.IDEFoundation.Launcher.PosixSpawn
+[Xcode] 08:01:11.358 xcodebuild[23944:344373] Test standard output and standard error is at /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Test-WebDriverAgentRunner-2018.11.08_08-01-09--0800.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-4DC785D6-31B1-41EB-B771-014DA9E5CCBB/WebDriverAgentRunner-8D1D24EF-5DD8-49B6-B8F8-01CF7F6130F2/StandardOutputAndStandardError.txt
+[Xcode] 08:01:11.373 xcodebuild[23944:344373] Setting up test runner session
+[Xcode] 08:01:11.378 xcodebuild[23944:344373] Launch session started.
+[Xcode] 08:01:11.512 xcodebuild[23944:344506] Connecting to mobile device: myUDID
+[Xcode] 08:01:11.549 xcodebuild[23944:344506] Starting session with mobile device
+[Xcode] 08:01:12.374 xcodebuild[23944:344506] Starting test manager service on mobile device.
+[Xcode] 08:01:12.978 xcodebuild[23944:344506] Received connection for test runner session
+[Xcode] 08:01:12.978 xcodebuild[23944:344506] Listening for proxy connection request from the test bundle
+[Xcode] 08:01:12.979 xcodebuild[23944:344373] Test runner session acquired connection.
+[Xcode] 08:01:12.979 xcodebuild[23944:344373] Waiting for test process to launch.
+[Xcode] 08:01:12.979 xcodebuild[23944:344506] Initiating session with identifier: 41BD3F31-4D84-4546-8C8A-3BA40AF5102C
+[Xcode] 08:01:13.125 xcodebuild[23944:344505] Got reply to session initiation request with identifier 41BD3F31-4D84-4546-8C8A-3BA40AF5102C (result:error): 29: (null)
+[Xcode] 08:01:15.932 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> installing com.apple.test.WebDriverAgentRunner-Runner using MobileInstall
+[Xcode] 08:01:17.144 xcodebuild[23944:344378] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> app uninstall set - {(
+[Xcode] )}
+[Xcode] 08:01:17.144 xcodebuild[23944:344378] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> app install set - {(
+[Xcode]     <DVTFilePath:0x7feb0ce473a0:'/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app'>
+[Xcode] )}
+[Xcode] 08:01:36.532 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> fetching applications...
+[Xcode] 08:01:37.651 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> done fetching applications...
+[Xcode] 08:01:37.653 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> remoteExecutable setInstalledPath:/private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app
+[Xcode] 
+[Xcode] 08:01:37.655 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> configuring for testing on device
+[Xcode] 08:01:37.656 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> updating test configuration with device paths
+[Xcode] 08:01:37.662 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> updated test configuration at /Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Test-WebDriverAgentRunner-2018.11.08_08-01-09--0800.xcresult/2_Test/Diagnostics/WebDriverAgentRunner-4DC785D6-31B1-41EB-B771-014DA9E5CCBB/WebDriverAgentRunner-8D1D24EF-5DD8-49B6-B8F8-01CF7F6130F2/LaunchSessions/41BD3F31-4D84-4546-8C8A-3BA40AF5102C/remote-container/tmp/WebDriverAgentRunner-41BD3F31-4D84-4546-8C8A-3BA40AF5102C.xctestconfiguration with device paths: <XCTestConfiguration: 0x7feb0cae7020>
+[Xcode] 	                  testBundleURL:file:///private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/PlugIns/WebDriverAgentRunner.xctest
+[Xcode] 	         testBundleRelativePath:(null)
+[Xcode] 	              productModuleName:WebDriverAgentRunner
+[Xcode] 	                    testsToSkip:(null)
+[Xcode] 	                     testsToRun:(null)
+[Xcode] 	             reportResultsToIDE:YES
+[Xcode] 	               testsDrivenByIDE:no
+[Xcode] 	              sessionIdentifier:41BD3F31-4D84-4546-8C8A-3BA40AF5102C
+[Xcode] 	      disablePerformanceMetrics:no
+[Xcode] 	treatMissingBaselinesAsFailures:no
+[Xcode] 	                baselineFileURL:(null)
+[Xcode] 	       baselineFileRelativePath:(null)
+[Xcode] 	          targetApplicationPath:(null)
+[Xcode] 	      targetApplicationBundleID:(null)
+[Xcode] 	 testApplicationDependencies:
+[Xcode] {
+[Xcode]     "com.apple.test.WebDriverAgentRunner-Runner" = "/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner-Runner.app";
+[Xcode]     "com.apple.test.WebDriverAgentRunnerUITests-Runner" = "/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunnerUITests-Runner.app";
+[Xcode]     "com.ipswitch.WebDriverAgentRunner" = "/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products/Debug-iphoneos/WebDriverAgentRunner.app";
+[Xcode] }
+[Xcode] 	 testApplicationUserOverrides:(null)
+[Xcode] 	     targetApplicationArguments:
+[Xcode] 	   targetApplicationEnvironment:(null)
+[Xcode] 	               reportActivities:YES
+[Xcode] 	       testsMustRunOnMainThread:YES
+[Xcode] 	         initializeForUITesting:YES
+[Xcode] 	 aggregateStatisticsBeforeCrash:
+[Xcode] {
+[Xcode]     XCSuiteRecordsKey =     {
+[Xcode]     };
+[Xcode] }
+[Xcode] 	        automationFrameworkPath:/Developer/Library/PrivateFrameworks/XCTAutomationSupport.framework
+[Xcode] 	 bridgedAutomationFrameworkPath:/System/iOSSupport/System/Library/PrivateFrameworks/XCTAutomationSupport.framework
+[Xcode] 	                     emitOSLogs:no
+[Xcode] 	       systemAttachmentLifetime:2
+[Xcode] 	         userAttachmentLifetime:1
+[Xcode] 	   gatherLocalizableStringsData:no
+[Xcode] 	          testExecutionOrdering:lexical
+[Xcode] 	    randomExecutionOrderingSeed:(null)
+[Xcode] 
+[Xcode] 08:01:37.662 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> uploading test configuration to app container
+[Xcode] 08:01:39.912 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> updating test process environment variables
+[Xcode] 08:01:39.913 xcodebuild[23944:344507] 📱<DVTiOSDevice (0x7feb0c1494b0), iPhone (Artur), iPhone, 12.1 (16B92), myUDID> updated testing environment variables {
+[Xcode]     "DYLD_FRAMEWORK_PATH" = "/private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks:";
+[Xcode]     "DYLD_INSERT_LIBRARIES" = "/Developer/usr/lib/libMainThreadChecker.dylib";
+[Xcode]     "DYLD_LIBRARY_PATH" = "/private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks";
+[Xcode]     "MTC_CRASH_ON_REPORT" = 1;
+[Xcode]     XCTestConfigurationFilePath = "/private/var/mobile/Containers/Data/Application/8A240475-3EEC-4310-B961-A5D9989DBD5F/tmp/WebDriverAgentRunner-41BD3F31-4D84-4546-8C8A-3BA40AF5102C.xctestconfiguration";
+[Xcode] }
+[Xcode] 08:01:41.000 xcodebuild[23944:344373] Test process runnable PID is 278.
+[Xcode] 2018-11-08 18:01:41.162076+0200 WebDriverAgentRunner-Runner[278:5985] Running tests...
+[Xcode] objc[278]: Class GCDAsyncSocketPreBuffer is implemented in both /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket (0x101e90578) and /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/RoutingHTTPServer.framework/RoutingHTTPServer (0x101ccd330). One of the two will be used. Which one is undefined.
+[Xcode] objc[278]: Class GCDAsyncReadPacket is implemented in both /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket (0x101e905c8) and /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/RoutingHTTPServer.framework/RoutingHTTPServer (0x101ccd380). One of the two will be used. Which one is undefined.
+[Xcode] objc[278]: Class GCDAsyncWritePacket is implemented in both /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket (0x101e90618) and /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/RoutingHTTPServer.framework/RoutingHTTPServer (0x101ccd3d0). One of the two will be used. Which one is undefined.
+[Xcode] objc[278]: Class GCDAsyncSpecialPacket is implemented in both /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket (0x101e90668) and /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/RoutingHTTPServer.framework/RoutingHTTPServer (0x101ccd420). One of the two will be used. Which one is undefined.
+[Xcode] objc[278]: Class GCDAsyncSocket is implemented in both /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/CocoaAsyncSocket.framework/CocoaAsyncSocket (0x101e906b8) and /private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/RoutingHTTPServer.framework/RoutingHTTPServer (0x101ccd470). One of the two will be used. Which one is undefined.
+[Xcode] 08:01:41.403 xcodebuild[23944:344429] Handling proxy channel request from test runner
+[Xcode] 08:01:41.404 xcodebuild[23944:344429] Test runner is ready, running protocol 29, requires at least version 7. Control framework is running 29 and requires at least 7
+[Xcode] 08:01:41.404 xcodebuild[23944:344373] Test runner session successfully initiated.
+[Xcode] 08:01:41.404 xcodebuild[23944:344373] Whitelisting test process ID 278
+[Xcode] 08:01:41.421 xcodebuild[23944:344373] Got whitelisting response from test daemon: Success
+[Xcode] 08:01:41.421 xcodebuild[23944:344373] Registering/updating daemon-based crash report observer for process names (
+[Xcode]     SpringBoard,
+[Xcode]     backboardd,
+[Xcode]     xctest,
+[Xcode]     "WebDriverAgentRunner-Runner"
+[Xcode] )
+[Xcode] 08:01:41.434 xcodebuild[23944:344373] Telling test runner to start executing tests.
+[Xcode] 18:01:41.171 WebDriverAgentRunner-Runner[278:5985] Linked XCTest.framework from /var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/XCTest.framework/XCTest, built with Xcode 1010(10B43a), modified on четверг, 8 ноября 2018 г., 17:51:14 Восточная Европа, стандартное время
+[Xcode] XCTest.framework bundle version: 14460.20
+[Xcode] 18:01:41.172 WebDriverAgentRunner-Runner[278:5985] System uptime: 6:07
+[Xcode] 18:01:41.172 WebDriverAgentRunner-Runner[278:5985] Process arguments: (
+[Xcode]     "/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/WebDriverAgentRunner-Runner",
+[Xcode]     "-NSTreatUnknownArgumentsAsOpen",
+[Xcode]     NO,
+[Xcode]     "-ApplePersistenceIgnoreState",
+[Xcode]     YES
+[Xcode] )
+[Xcode] 18:01:41.172 WebDriverAgentRunner-Runner[278:5985] Process environment: {
+[Xcode]     "CA_ASSERT_MAIN_THREAD_TRANSACTIONS" = 0;
+[Xcode]     "CA_DEBUG_TRANSACTIONS" = 0;
+[Xcode]     "CFFIXED_USER_HOME" = "/private/var/mobile/Containers/Data/Application/8A240475-3EEC-4310-B961-A5D9989DBD5F";
+[Xcode]     CLASSIC = 1;
+[Xcode]     "DYLD_FRAMEWORK_PATH" = "/private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks:";
+[Xcode]     "DYLD_LIBRARY_PATH" = "/private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks";
+[Xcode]     HOME = "/private/var/mobile/Containers/Data/Application/8A240475-3EEC-4310-B961-A5D9989DBD5F";
+[Xcode]     LOGNAME = mobile;
+[Xcode]     "MJPEG_SERVER_PORT" = "";
+[Xcode]     "MTC_CRASH_ON_REPORT" = 1;
+[Xcode]     NSUnbufferedIO = YES;
+[Xcode]     "OS_ACTIVITY_DT_MODE" = YES;
+[Xcode]     PATH = "/usr/bin:/bin:/usr/sbin:/sbin";
+[Xcode]     SHELL = "/bin/sh";
+[Xcode]     "SQLITE_ENABLE_THREAD_ASSERTIONS" = 1;
+[Xcode]     TMPDIR = "/private/var/mobile/Containers/Data/Application/8A240475-3EEC-4310-B961-A5D9989DBD5F/tmp/";
+[Xcode]     "UPGRADE_TIMESTAMP" = 1541670188000;
+[Xcode]     USER = mobile;
+[Xcode]     "USE_PORT" = 8100;
+[Xcode]     "WDA_PRODUCT_BUNDLE_IDENTIFIER" = "com.ipswitch.WebDriverAgentRunner";
+[Xcode]     XCTestConfigurationFilePath = "/private/var/mobile/Containers/Data/Application/8A240475-3EEC-4310-B961-A5D9989DBD5F/tmp/WebDriverAgentRunner-41BD3F31-4D84-4546-8C8A-3BA40AF5102C.xctestconfiguration";
+[Xcode]     "XPC_FLAGS" = 0x0;
+[Xcode]     "XPC_SERVICE_NAME" = "UIKitApplication:com.apple.test.WebDriverAgentRunner-Runner[0x56d8][62]";
+[Xcode]     "__CF_USER_TEXT_ENCODING" = "0x1F5:0:0";
+[Xcode] }
+[Xcode] 18:01:41.173 WebDriverAgentRunner-Runner[278:5985] App Sandbox active: YES
+[Xcode] 18:01:41.173 WebDriverAgentRunner-Runner[278:5985] Loading test bundle at: file:///private/var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/PlugIns/WebDriverAgentRunner.xctest
+[Xcode] 18:01:41.254 WebDriverAgentRunner-Runner[278:5985] Finished loading test bundle
+[Xcode] 18:01:41.255 WebDriverAgentRunner-Runner[278:5985] Readying IDE session
+[Xcode] 18:01:41.258 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Exchange protocol versions with daemon' with timeout 15.00
+[Xcode] 18:01:41.259 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a39d70, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: `Exchange protocol versions with daemon`
+[Xcode] 18:01:41.260 WebDriverAgentRunner-Runner[278:6016] <XCTWaiter: 0x283a39d70, state: XCTWaiterStateSucceeded>: cancelWaiting
+[Xcode] 18:01:41.269 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a39d70, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.269 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a39d70, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.269 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a39d70, state: XCTWaiterStateSucceeded> cleaning up `Exchange protocol versions with daemon`
+[Xcode] 18:01:41.273 WebDriverAgentRunner-Runner[278:5985] Got daemon protocol version 26
+[Xcode] 18:01:41.275 WebDriverAgentRunner-Runner[278:5985] Requesting IDE connection transport
+[Xcode] 18:01:41.278 WebDriverAgentRunner-Runner[278:6016] Creating transport with received transport data
+[Xcode] 18:01:41.278 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34590, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: `Transport for IDE session acquired`
+[Xcode] 18:01:41.278 WebDriverAgentRunner-Runner[278:6016] <XCTWaiter: 0x283a34590, state: XCTWaiterStateSucceeded>: cancelWaiting
+[Xcode] 18:01:41.279 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34590, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.279 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a34590, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.279 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34590, state: XCTWaiterStateSucceeded> cleaning up `Transport for IDE session acquired`
+[Xcode] 18:01:41.279 WebDriverAgentRunner-Runner[278:5985] Creating connection with transport <DTXFileDescriptorTransport: 0x281619500>
+[Xcode] 18:01:41.279 WebDriverAgentRunner-Runner[278:5985] Creating the proxy channel with connection <DTXConnection 0x280436e00 : x1>
+[Xcode] 18:01:41.280 WebDriverAgentRunner-Runner[278:5985] Creating future for 'IDE session ready for test plan' with timeout 60.00
+[Xcode] 18:01:41.280 WebDriverAgentRunner-Runner[278:5985] Messaging IDE proxy - _XCT_testBundleReadyWithProtocolVersion:29 minimumVersion:7
+[Xcode] 18:01:41.281 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a347d0, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: `IDE session ready for test plan`
+[Xcode] 18:01:41.298 WebDriverAgentRunner-Runner[278:6016] _XCT_testBundleReadyWithProtocolVersion:minimumVersion: reply received
+[Xcode] 18:01:41.325 WebDriverAgentRunner-Runner[278:6017] _IDE_startExecutingTestPlanWithProtocolVersion:29
+[Xcode] 18:01:41.325 WebDriverAgentRunner-Runner[278:6017] <XCTWaiter: 0x283a347d0, state: XCTWaiterStateSucceeded>: cancelWaiting
+[Xcode] 18:01:41.325 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a347d0, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.325 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a347d0, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.325 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a347d0, state: XCTWaiterStateSucceeded> cleaning up `IDE session ready for test plan`
+[Xcode] 08:01:41.472 xcodebuild[23944:344373] Starting test plan, clearing initialization timeout timer.
+[Xcode] 18:01:41.328 WebDriverAgentRunner-Runner[278:5985] Initializing for UI testing.
+[Xcode] 18:01:41.332 WebDriverAgentRunner-Runner[278:5985] Linked XCTAutomationSupport.framework from /var/containers/Bundle/Application/3BBFAD0C-61F1-4310-8076-D71569C83A2D/WebDriverAgentRunner-Runner.app/Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport, built with Xcode 1010(10B43a), modified on четверг, 8 ноября 2018 г., 17:51:14 Восточная Европа, стандартное время
+[Xcode] XCTAutomationSupport.framework bundle version: 1
+[Xcode] 18:01:41.332 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Loading Accessibility' with timeout 70.00
+[Xcode] 18:01:41.333 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a580, state: XCTWaiterStateInProgress> entering wait loop for 70.00s with expectations: `Loading Accessibility`
+[Xcode] 18:01:41.349 WebDriverAgentRunner-Runner[278:6017] <XCTWaiter: 0x283a3a580, state: XCTWaiterStateSucceeded>: cancelWaiting
+[Xcode] 18:01:41.354 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a580, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.354 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a3a580, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.354 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a580, state: XCTWaiterStateSucceeded> cleaning up `Loading Accessibility`
+[Xcode] 18:01:41.354 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Enable gathering of localized strings' with timeout 70.00
+[Xcode] 18:01:41.355 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d50, state: XCTWaiterStateInProgress> entering wait loop for 70.00s with expectations: `Enable gathering of localized strings`
+[Xcode] 18:01:41.363 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d50, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.363 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a34d50, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.363 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d50, state: XCTWaiterStateSucceeded> cleaning up `Enable gathering of localized strings`
+[Xcode] 18:01:41.363 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Set AX timeout to 60.00s' with timeout 65.00
+[Xcode] 18:01:41.364 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a530, state: XCTWaiterStateSucceeded> entering wait loop for 65.00s with expectations: `Set AX timeout to 60.00s`
+[Xcode] 18:01:41.364 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a530, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.364 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a3a530, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.364 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a530, state: XCTWaiterStateSucceeded> cleaning up `Set AX timeout to 60.00s`
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Registering for kAXUserTestingNotification' with timeout 65.00
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4f0, state: XCTWaiterStateInProgress> entering wait loop for 65.00s with expectations: `Registering for kAXUserTestingNotification`
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4f0, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a3a4f0, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4f0, state: XCTWaiterStateSucceeded> cleaning up `Registering for kAXUserTestingNotification`
+[Xcode] 18:01:41.365 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Registering for kAXAlertNotification' with timeout 65.00
+[Xcode] 18:01:41.366 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d10, state: XCTWaiterStateSucceeded> entering wait loop for 65.00s with expectations: `Registering for kAXAlertNotification`
+[Xcode] 18:01:41.366 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d10, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.366 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a34d10, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.366 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34d10, state: XCTWaiterStateSucceeded> cleaning up `Registering for kAXAlertNotification`
+[Xcode] 18:01:41.366 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Registering for kAXPidStatusChangedNotification' with timeout 65.00
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34cc0, state: XCTWaiterStateSucceeded> entering wait loop for 65.00s with expectations: `Registering for kAXPidStatusChangedNotification`
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34cc0, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a34cc0, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a34cc0, state: XCTWaiterStateSucceeded> cleaning up `Registering for kAXPidStatusChangedNotification`
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] Creating future for 'Request background assertion for test process' with timeout 30.00
+[Xcode] 18:01:41.367 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4b0, state: XCTWaiterStateInProgress> entering wait loop for 30.00s with expectations: `Request background assertion for test process`
+[Xcode] 18:01:41.368 WebDriverAgentRunner-Runner[278:6016] Got reply for background assertion for 278, acquired: YES.
+[Xcode] 18:01:41.368 WebDriverAgentRunner-Runner[278:6016] <XCTWaiter: 0x283a3a4b0, state: XCTWaiterStateSucceeded>: cancelWaiting
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4b0, state: XCTWaiterStateSucceeded> done waiting
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] Canceling watchdog for <XCTWaiter: 0x283a3a4b0, state: XCTWaiterStateInProgress>.
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] <XCTWaiter: 0x283a3a4b0, state: XCTWaiterStateSucceeded> cleaning up `Request background assertion for test process`
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] Test runner is already executing in the background.
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] Done initializing for UI testing.
+[Xcode] 18:01:41.372 WebDriverAgentRunner-Runner[278:5985] Entering test execution event loop
+[Xcode] 18:01:41.373 WebDriverAgentRunner-Runner[278:5985] -[XCTRunnerIDESession testBundleWillStart:]
+[Xcode] 18:01:41.373 WebDriverAgentRunner-Runner[278:5985] Loading test suite...
+[Xcode] 18:01:41.412 WebDriverAgentRunner-Runner[278:5985] Finished loading test suite, took 0.039s
+[Xcode] 18:01:41.412 WebDriverAgentRunner-Runner[278:5985] Running suite...
+[Xcode] 08:01:41.532 xcodebuild[23944:344373] _XCT_testSuite:All tests didStartAt:2018-11-08 16:01:41 +0000
+[Xcode] 08:01:45.286 xcodebuild[23944:344599] (LOG ARBITER) Rotating message buffer with 167 messages.
+[Xcode] 08:01:48.427 xcodebuild[23944:344506] (LOG ARBITER) Rotating message buffer with 87 messages.
+[Xcode] 08:01:51.303 xcodebuild[23944:344506] (LOG ARBITER) Rotating message buffer with 193 messages.
+[Xcode] 08:01:54.491 xcodebuild[23944:344665] (LOG ARBITER) Rotating message buffer with 130 messages.
+[Xcode] 08:01:57.515 xcodebuild[23944:344665] (LOG ARBITER) Rotating message buffer with 153 messages.
+[Xcode] 08:02:00.398 xcodebuild[23944:344506] (LOG ARBITER) Rotating message buffer with 8 messages.
+[Xcode] 08:02:03.515 xcodebuild[23944:344507] (LOG ARBITER) Rotating message buffer with 154 messages.
+[Xcode] 08:02:06.441 xcodebuild[23944:344506] (LOG ARBITER) Rotating message buffer with 221 messages.
+[Xcode] 08:02:09.386 xcodebuild[23944:344666] (LOG ARBITER) Rotating message buffer with 96 messages.
+[Xcode] 
+[debug] [XCUITest] Successfully reset '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj/project.pbxproj' with bundle id 'com.facebook.WebDriverAgentRunner'
+[debug] [XCUITest] Removing WDA application from device
+[XCUITest] Error: Unable to start WebDriverAgent session because of xcodebuild failure: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+[XCUITest]     at /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:453:13
+[XCUITest]     at Generator.next (<anonymous>)
+[XCUITest]     at asyncGeneratorStep (/usr/local/lib/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+[XCUITest]     at _next (/usr/local/lib/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+[XCUITest]     at <anonymous>
+[debug] [XCUITest] Parsed BUILD_DIR configuration value: '/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Build/Products'
+[debug] [XCUITest] Got derived data root: '/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy'
+[debug] [XCUITest] Started background XCTest logs cleanup: find -E /private/var/folders -regex '.*/Session-WebDriverAgentRunner.*\.log$|.*/StandardOutputAndStandardError\.txt$' -type f -exec sh -c 'echo "" > "{}"' \;
+[XCUITest] Cleaning test logs in '/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs' folder
+[debug] [iOS] Clearing log files
+[debug] [iOS] Deleting '/Users/administrator/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs'. Freeing 60K.
+[debug] [iOS] Finished clearing log files
+[debug] [BaseDriver] Event 'resetStarted' logged at 1541692935403 (08:02:15 GMT-0800 (PST))
+[debug] [XCUITest] Reset: fullReset not set. Leaving as is
+[debug] [BaseDriver] Event 'resetComplete' logged at 1541692935403 (08:02:15 GMT-0800 (PST))
+[debug] [iOSLog] Stopping iOS log capture
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1541692935406 (08:02:15 GMT-0800 (PST))
+[MJSONWP] Encountered internal error running command: Error: Unable to start WebDriverAgent session because of xcodebuild failure: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up Make sure you follow the tutorial at https://github.com/appium/appium-xcuitest-driver/blob/master/docs/real-device-config.md. Try to remove the WebDriverAgentRunner application from the device if it is installed and reboot the device.
+[MJSONWP]     at /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/lib/driver.js:453:13
+[MJSONWP]     at Generator.next (<anonymous>)
+[MJSONWP]     at asyncGeneratorStep (/usr/local/lib/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:3:24)
+[MJSONWP]     at _next (/usr/local/lib/node_modules/appium/node_modules/@babel/runtime/helpers/asyncToGenerator.js:25:9)
+[MJSONWP]     at <anonymous>
+[HTTP] <-- POST /wd/hub/session 500 86237 ms - 605
+[HTTP]
